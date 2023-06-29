@@ -43,7 +43,7 @@ module LFSR(WE,Increment,Zero,rstb,CLK,OF);
     assign OF = overflow;
     //State change logic
     mux_n #(.n(8))ChangeMux(Increment,incVals,decVals,changeVal);
-    mux_n #(.n(8))ConstMux(rstb,GND,,counter,constVal);
+    mux_n #(.n(8))ConstMux(rstb,GND,counter,constVal);
     nor_gate overridecheck(rstb,overflow,NoOverride);
     and_gate allowChangeGate(NoOverride,WE,allowChange);
     mux_n #(.n(8))StateChangeMux(allowChange,changeVal,constVal,nextVal);

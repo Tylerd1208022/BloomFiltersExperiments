@@ -1,27 +1,27 @@
 `timescale 1ns/10ps
 
-module and_gate_condense(input,output);
+module and_gate_condense(in,out);
 
     //Condenses a long input into single output bit with bitwise AND
 
     parameter n = 32;
 
-    input [n-1:0]input;
-    output output;
+    input [n-1:0]in;
+    output out;
 
-    assign output = &input;
+    assign out = &in;
 
 endmodule
 
-module or_gate_condense(input,output);
+module or_gate_condense(in,out);
 
     //Condenses a long input into single output bit with bitwise AND
 
     parameter n = 32;
 
-    input [n-1:0]input;
-    output output;
+    input [n-1:0]in;
+    output out;
 
-    assign output = |input;
+    assign out = |in;
 
 endmodule

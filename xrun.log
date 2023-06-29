@@ -1,0 +1,8 @@
+xrun(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	18.09-s011: Started on Jun 29, 2023 at 07:45:39 CDT
+xrun
+	-64bit
+	-gui
+	-access r
+	hashCoder.v
+xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/ted4152/BloomFiltersExperiments/xcelium.d/run.lnx8664.18.09.d/.xmrun.lock'. pid:2408049.

@@ -3,5 +3,5 @@
 module nand_gate(a,b,out);
     input a, b;
     output out;
-    assign output = ~(a & b);
+    assign out = ~(a & b);
 endmodule

@@ -7,7 +7,7 @@ module mux_n(sel,a,b,out);
     output [n-1:0]out;
     wire [n-1:0]selTrue, selFalse;
     wire notSel;
-    not_gate(sel,notSel);
+    not_gate selInverter(sel,notSel);
     genvar i;
     generate
         for(i = 0; i < n; i = i + 1) begin

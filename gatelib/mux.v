@@ -6,6 +6,6 @@ module mux(sel,a,b,out);
     wire selA,selB,notsel;
     and_gate ifSel(sel,a,selA);
     not_gate SelInv(sel,notsel);
-    and_gate else(notsel,b,selB);
+    and_gate elsegate(notsel,b,selB);
     or_gate combineTest(selB,selA,out);
 endmodule
